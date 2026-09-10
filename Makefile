@@ -1,6 +1,6 @@
 include cmd/Makefile.common
 
-IMAGES := notification-controller notification-discord notification-frontend
+IMAGES := notification-controller notification-discord
 VERSION := $(shell git describe --tags --abbrev=0 2>/dev/null || echo v0.1.0)
 
 .PHONY: precommit

@@ -10,7 +10,6 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
-### Added
-
-- feat: extract generic notification core from trading monorepo (model, CDB publish command + sender, controller, NotificationHandlerTx, frontend store/API) into this repo
+- feat: extract generic notification core from trading monorepo (model, CDB publish command + sender, controller, NotificationHandlerTx) into this repo
 - feat: opaque metadata on the notification model (source-specific fields pass through as key/value pairs)
+- refactor: drop frontend read-model from delivery core (read-model stays in trading as the trading UI query service)
