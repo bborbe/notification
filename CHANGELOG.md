@@ -10,6 +10,7 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 
 ## v0.1.1
 
+- refactor: scope repo to library only — services moved to dedicated repos (notification-controller, notification-discord), each with own go.mod and Dockerfile
 - refactor: drop frontend read-model from delivery core (read-model stays in trading as the trading UI query service)
 
 ## v0.1.0
