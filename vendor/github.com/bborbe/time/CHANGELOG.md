@@ -1,0 +1,466 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+Please choose versions by [Semantic Versioning](http://semver.org/).
+
+* MAJOR version when you make incompatible API changes,
+* MINOR version when you add functionality in a backwards-compatible manner, and
+* PATCH version when you make backwards-compatible bug fixes.
+
+## v1.27.11
+
+- chore: update github.com/bborbe/collection to v1.20.24, github.com/bborbe/errors to v1.5.21, github.com/bborbe/parse to v1.10.21, github.com/bborbe/validation to v1.4.23
+
+## v1.27.10
+
+- chore: update Go to 1.27.0 and update dependencies
+- chore: Update build tooling for Go 1.27 compatibility (golangci-lint v2.13.1, errcheck v1.20.0, gofmt runs last in `format` target)
+
+## v1.27.9
+
+- Update Go to 1.26.6 and update dependencies (golang.org/x/mod v0.40.0 for GOSUMDB/GOPROXY spoofing CVEs)
+
+## v1.27.8
+
+- chore: add the missing root `LICENSE` (BSD-3-Clause, matching the rest of the fleet). The repo is public and had no license file.
+
+## v1.27.7
+
+- Bump `golang.org/x/text` to v0.39.0 (CVE-2026-56852)
+
+## v1.27.6
+
+- Bump github.com/bborbe/collection to v1.20.17
+- Bump github.com/bborbe/errors to v1.5.16
+- Bump github.com/bborbe/parse to v1.10.17
+- Bump github.com/bborbe/math and github.com/bborbe/run
+- Bump go directive to 1.26.5
+
+## v1.27.5
+
+- Bump github.com/bborbe/collection to v1.20.16
+- Bump github.com/bborbe/parse to v1.10.16
+- Bump github.com/bborbe/validation to v1.4.16
+- Bump indirect deps: bborbe/math, bborbe/run, getsentry/sentry-go
+
+## v1.27.4
+
+- Bump github.com/bborbe/parse to v1.10.15
+- Bump github.com/bborbe/validation to v1.4.15
+- Bump github.com/bborbe/math to v1.3.11 (indirect)
+
+## v1.27.3
+
+- Bump github.com/bborbe/collection to v1.20.15
+- Bump github.com/bborbe/errors to v1.5.15
+- Bump github.com/bborbe/run to v1.9.28 (indirect)
+
+## v1.27.2
+
+- bump github.com/bborbe/collection to v1.20.13
+- bump github.com/bborbe/parse to v1.10.13, validation to v1.4.14
+- bump ginkgo to v2.32.0, gomega to v1.42.1
+- bump golang.org/x/* indirect dependencies
+
+## v1.27.1
+
+- bump go toolchain to 1.26.4
+- update ginkgo/v2 to v2.29.0 and gomega to v1.41.0
+- update golang.org/x/{net,sys,text} to latest
+- add exclude for cloud.google.com/go v0.26.0
+
+## v1.27.0
+
+- feat: add DateOrDateTime type accepting both date-only and RFC3339 input, serializing as YYYY-MM-DD when midnight UTC and as RFC3339Nano otherwise
+
+## v1.26.0
+
+- feat: add Clone and ClonePtr methods to Date and UnixTime types
+
+## v1.25.12
+
+- bump github.com/bborbe/parse v1.10.11 → v1.10.12
+- bump github.com/bborbe/validation v1.4.12 → v1.4.13
+
+## v1.25.11
+
+- Bump Go to 1.26.3
+- Update github.com/bborbe/collection to v1.20.12
+- Update github.com/bborbe/errors to v1.5.13
+
+## v1.25.10
+
+- chore: Migrate to tools.env + Makefile @version pattern; remove tools.go and obsolete replace block. go.mod reduced from 450 to 42 lines.
+
+## v1.25.9
+
+- Bump bborbe/* dependencies (collection, errors, parse, validation)
+- Bump golang.org/x/* dependencies (crypto, net, sys, tools, etc.)
+- Bump counterfeiter v6.12.2, sentry-go v0.45.0
+- Update Go toolchain to 1.26.2
+- Add extraMounts to dark-factory config
+
+## v1.25.8
+
+- bump bborbe/collection to v1.20.8
+- bump bborbe/errors to v1.5.9
+- bump bborbe/parse to v1.10.9
+- bump bborbe/validation to v1.4.10
+
+## v1.25.7
+
+- bump go-crypto, containerd, docker, go-git, moby/buildkit, otel deps
+- add replace directives for denis-tingaikin/go-header and opencontainers/runtime-spec
+
+## v1.25.6
+
+- Remove golang.org/x/lint direct dependency (moved to indirect)
+- Remove opencontainers/runtime-spec replace directive
+- Downgrade containerd to v1.7.29
+
+## v1.25.5
+
+- fix: Add replace directive for opencontainers/runtime-spec to v1.2.1 to fix containerd/oci compilation with Go 1.26
+
+## v1.25.4
+
+- Update bborbe/* dependencies (collection, errors, parse, validation)
+- Update golangci-lint v2.11.4, osv-scanner v2.3.5
+- Update docker/moby/containerd dependencies
+- Clean up go.mod: remove replace/exclude blocks
+
+## v1.25.3
+
+- chore: verify project health — all tests pass, linting clean, precommit succeeds
+
+## v1.25.2
+
+- standardize Makefile: add mocks mkdir, reorder lint, multiline trivy, add .PHONY declarations
+- setup dark-factory config
+
+## v1.25.1
+
+- upgrade golangci-lint from v1 to v2
+- update bborbe/errors to v1.5.5
+- update bborbe/collection to v1.20.5
+- update bborbe/parse to v1.10.5
+- update bborbe/validation to v1.4.6
+
+## v1.25.0
+
+- feat: Add Before, After, Equal, EqualPtr, Truncate methods to Date type
+- feat: Add Compare and ComparePtr methods to UnixTime type
+
+## v1.24.2
+
+- go mod update
+
+## v1.24.1
+
+- go mod update
+
+## v1.24.0
+
+- Add encoding.TextMarshaler/TextUnmarshaler to DateTime, UnixTime, Duration, TimeOfDay
+- Add comprehensive JSON and YAML struct regression tests for all 5 time types
+
+## v1.23.0
+
+- Add encoding.TextMarshaler/TextUnmarshaler to Date
+- Add JSON regression and YAML round-trip tests for Date
+
+## v1.22.2
+
+- Update Go to 1.26.0
+
+## v1.22.1
+
+- Update Go to 1.25.7
+- Update github.com/bborbe/errors to v1.5.2
+
+## v1.22.0
+
+- Add NOW-14d, NOW+1h relative date support to DateTime and Date UnmarshalJSON
+- Add positive prefix (+1h) support to ParseDuration
+
+## v1.21.2
+
+- Update Go 1.25.6
+- Update dependencies (parse, validation, osv-scanner, ginkgo, gomega)
+- Update transitive dependencies
+
+## v1.21.1
+
+- Update Go to 1.25.5
+- Update golang.org/x/crypto to v0.47.0
+- Update dependencies
+
+## v1.21.0
+
+- update go and deps
+
+## v1.20.0
+- Add GitHub Actions workflows for CI, code review, and automated testing
+- Add golangci-lint configuration for enhanced code quality checks
+- Add security scanning tools: gosec, osv-scanner, and trivy
+- Improve Makefile with additional security and quality checks
+- Integrate golines for automatic line length formatting (max 100 characters)
+- Update goimports-reviser to v3 for better import organization
+- Update Go module dependencies for testing and tooling
+- Improve code formatting across all range validation methods
+
+## v1.19.2
+- Add Max() method to DateTimeRanges, UnixTimeRanges, and DateRanges for finding maximum encompassing range
+- Add Min() method to DateTimeRanges, UnixTimeRanges, and DateRanges for finding minimum overlapping range
+
+## v1.19.1
+- Add AddDate() method to all types (DateTime, Date, UnixTime) to align with Go standard library naming conventions
+- Deprecate AddTime() methods (use AddDate() instead)
+
+## v1.19.0
+- Add time range constructor functions for all range types (DayTimeRange, WeekTimeRange, MonthTimeRange, QuarterTimeRange, YearTimeRange)
+- Add range constructor functions for DateRange (DayDateRange, WeekDateRange, MonthDateRange, QuarterDateRange, YearDateRange)
+- Add range constructor functions for DateTimeRange (DayDateTimeRange, WeekDateTimeRange, MonthDateTimeRange, QuarterDateTimeRange, YearDateTimeRange)
+- Add range constructor functions for UnixTimeRange (DayUnixTimeRange, WeekUnixTimeRange, MonthUnixTimeRange, QuarterUnixTimeRange, YearUnixTimeRange)
+- Add TimeRange() conversion methods to DateRange, DateTimeRange, and UnixTimeRange types
+- Add public period boundary calculation functions (BeginningOfDay, EndOfDay, BeginningOfWeek, EndOfWeek, etc.)
+- Add comprehensive test coverage for all new range constructor functionality with consistency validation
+- Support timezone preservation in all range calculations
+
+## v1.18.1
+- Fix WaiterUntil to handle equal times correctly (no longer waits when until time equals current time)
+- Remove 10-second buffer from WaiterUntil for more precise timing behavior
+- Add SpecTimeout to waiter tests to prevent hanging and improve test reliability
+- Add support for int64 and *int64 in ParseDuration for direct nanosecond value handling
+- Add support for uppercase and mixed case duration parsing (e.g., "1H30M", "1h30M")
+- Add .PHONY directive to Makefile test target
+- Update dependencies to latest versions
+
+## v1.18.0
+- Add IsZero method to DateTime, UnixTime, and Date types
+- Add DateTimeRange, DateRange, and UnixTimeRange types with validation
+- Add comprehensive tests for all new IsZero methods
+- Add proper godoc comments following Go documentation best practices
+- Implement validation framework patterns for range type validation
+
+## v1.17.1
+
+- add test.ParseDuration utility function
+
+## v1.17.0
+
+- add counterfeiter mocks for all interfaces
+- add Layout types and parsing functionality
+- go mod update
+
+## v1.16.3
+
+- add test.ParseDate
+
+## v1.16.2
+
+- add tests
+- go mod update
+
+## v1.16.1
+
+- add example to readme
+- go mod update
+
+## v1.16.0
+
+- add test package with utils for testing
+- go mod update
+
+## v1.15.2
+
+- add UnixTime.Before and UnixTime.after
+- go mod update
+
+## v1.15.1
+
+- add HasDuration and HasTime interfaces
+
+## v1.15.0
+
+- add LoadLocation with cache
+- add ParseLocation
+
+## v1.14.2
+
+- add UTC() and Weekday() to Date, DateTime and UnixTime 
+
+## v1.14.1
+ 
+- add Weekdays.Weekdays()
+
+## v1.14.0
+
+- add Weekday, Weekdays, ParseWeekday, ParseWeekdays
+
+## v1.13.1
+
+- fix TimePtr on nil Date, DateTime or UnixTime
+- add AddTime to Date, DateTime or UnixTime
+
+## v1.13.0
+
+- remove vendor
+- go mod update
+
+## v1.12.1
+
+- add CurrentDateTimeGetterFunc and CurrentTimeGetterFunc
+- go mod update
+
+## v1.12.0
+
+- refactor WaiterUntil
+- add WaiterDuration
+
+## v1.11.6
+
+- allow NOW-1d
+- go mod update
+
+## v1.11.5
+
+- add UnixTime.DateTime
+
+## v1.11.4
+
+- add UnixTime.Truncate
+
+## v1.11.3
+
+- add DateTime.Truncate
+
+## v1.11.2
+
+- improve ParseDuration
+
+## v1.11.1
+
+- DateTime.Add use Duration
+
+## v1.11.0
+
+- add CurrentDateTime
+
+## v1.10.0
+
+- clean Duration.String() (1h15m0s => 1h15m) 
+
+## v1.9.1
+
+- add Time.Sub 
+- add Duration.Abs
+
+## v1.9.0
+
+- Duration.String output now days and weeks like: 10w5d23h59m30s
+- go mod update
+
+## v1.8.2
+
+- add list types
+
+## v1.8.1
+
+- allow parse timeOfDay with seconds
+
+## v1.8.0
+
+- allow unmarshal NOW
+- go mod update
+
+## v1.7.4
+
+- add parse time without seconds
+- go mod update
+
+## v1.7.3
+
+- Add MarshalBinary and UnmarshalBinary
+- go mod update
+
+## v1.7.2
+
+- add Date.Add() and UnixTime.Add()
+
+## v1.7.1
+
+- add Year(), Month(), Day(), Hour(), Minute(), Second() and Nanosecond()
+
+## v1.7.0
+
+- add ParseUnixTime
+- go mod update
+
+## v1.6.2
+
+- add Before, After and Equal to TimeOfDay
+
+## v1.6.1
+
+- add Duration.String()
+
+## v1.6.0
+
+- add ParseDateTimeDefault
+- add ParseDurationDefault
+- add ParseTimeDefault
+- add ParseTimeOfDayDefault
+
+## v1.5.2
+
+- remove error from DateTime
+- add Time
+
+## v1.5.1
+
+- add DateTime to TimeOfDay
+
+## v1.5.0
+
+- add Duration
+- marshal unmarshal Duration from duration string or number
+- go mod update
+
+## v1.4.2
+
+- test marshal Date and DateTime
+
+## v1.4.1
+
+- fix parse empty Date and DateTime
+
+## v1.4.0
+
+- add DateTime
+- add UnixTime
+- test Date
+- go mod update
+
+## v1.3.0
+
+- Add compare time
+- go mod update
+
+## v1.2.0
+
+- Allow ParseTimeOfDay with Timezone. Example '13:37 Europe/Berlin'
+- go mod update
+
+## v1.1.1
+
+- fix ParseDuration
+
+## v1.1.0
+
+- Add ParseDuration with support for d=day and w=week
+
+## v1.0.0
+
+- Initial Version

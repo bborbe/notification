@@ -1,0 +1,28 @@
+// Copyright (c) 2023 Benjamin Borbe All rights reserved.
+// Use of this source code is governed by a BSD-style
+// license that can be found in the LICENSE file.
+
+package http
+
+import (
+	"net/http"
+	"net/http/httputil"
+	"net/url"
+)
+
+// NewProxy creates a reverse proxy that forwards requests to the specified URL.
+// It uses the provided transport for making upstream requests and handles errors with the given error handler.
+// The proxy automatically sets the Host header to match the target URL.
+func NewProxy(
+	transport http.RoundTripper,
+	apiURL *url.URL,
+	proxyErrorHandler ProxyErrorHandler,
+) http.Handler {
+	reverseProxy := httputil.NewSingleHostReverseProxy(apiURL)
+	reverseProxy.ErrorHandler = proxyErrorHandler.HandleError
+	reverseProxy.Transport = RoundTripperFunc(func(req *http.Request) (*http.Response, error) {
+		req.Host = apiURL.Host
+		return transport.RoundTrip(req)
+	})
+	return reverseProxy
+}

@@ -1,0 +1,81 @@
+version: "2"
+
+run:
+  timeout: 5m
+  tests: true
+
+linters:
+  enable:
+    - govet
+    - errcheck
+    - staticcheck
+    - unused
+    - revive
+    - gosec
+    - gocyclo
+    - depguard
+    - dupl
+    - funlen
+    - gocognit
+    - nestif
+    - maintidx
+    - errname
+    - unparam
+    - bodyclose
+    - forcetypeassert
+  settings:
+    depguard:
+      rules:
+        Main:
+          deny:
+            - pkg: "github.com/pkg/errors"
+              desc: "use github.com/bborbe/errors instead"
+    funlen:
+      lines: 100
+      statements: 50
+    gocognit:
+      min-complexity: 30
+    nestif:
+      min-complexity: 5
+    maintidx:
+      min-maintainability-index: 20
+    errcheck:
+      exclude-functions:
+        - (io.Closer).Close
+        - (io.Writer).Write
+        - fmt.Fprint
+        - fmt.Fprintf
+        - fmt.Fprintln
+
+    gosec:
+      excludes:
+        - G104
+
+  exclusions:
+    presets:
+      - comments
+      - std-error-handling
+      - common-false-positives
+    rules:
+      - linters:
+          - staticcheck
+        text: "SA1019"
+      - linters:
+          - revive
+        path: "_test\\.go$"
+        text: "dot-imports"
+      - linters:
+          - revive
+        text: "unused-parameter"
+      - linters:
+          - revive
+        text: "stutters"
+      - linters:
+          - revive
+        text: "exported"
+      - linters:
+          - funlen
+        path: "_test\\.go$"
+      - linters:
+          - gocognit
+        path: "_test\\.go$"

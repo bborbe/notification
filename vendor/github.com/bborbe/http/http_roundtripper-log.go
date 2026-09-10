@@ -1,0 +1,30 @@
+// Copyright (c) 2023 Benjamin Borbe All rights reserved.
+// Use of this source code is governed by a BSD-style
+// license that can be found in the LICENSE file.
+
+package http
+
+import (
+	"net/http"
+
+	libtime "github.com/bborbe/time"
+	"github.com/golang/glog"
+)
+
+// NewRoundTripperLog wraps a RoundTripper with request/response logging.
+// It logs the HTTP method, URL, status code, duration, and any errors at verbose level 2.
+// This is useful for debugging and monitoring HTTP client behavior.
+func NewRoundTripperLog(tripper http.RoundTripper) http.RoundTripper {
+	return RoundTripperFunc(func(req *http.Request) (*http.Response, error) {
+		now := libtime.Now()
+		resp, err := tripper.RoundTrip(req)
+		if err != nil {
+			glog.V(2).
+				Infof("%s request to %s in %d ms failed: %v", req.Method, req.URL, libtime.Now().Sub(now).Milliseconds(), err)
+			return nil, err
+		}
+		glog.V(2).
+			Infof("%s request to %s completed with statusCode %d in %d ms", req.Method, req.URL, resp.StatusCode, libtime.Now().Sub(now).Milliseconds())
+		return resp, nil
+	})
+}

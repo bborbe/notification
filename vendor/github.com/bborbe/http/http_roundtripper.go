@@ -1,0 +1,13 @@
+// Copyright (c) 2023 Benjamin Borbe All rights reserved.
+// Use of this source code is governed by a BSD-style
+// license that can be found in the LICENSE file.
+
+package http
+
+import "net/http"
+
+//counterfeiter:generate -o mocks/http-roundtripper.go --fake-name HttpRoundTripper . RoundTripper
+
+// RoundTripper is an alias for http.RoundTripper to enable mock generation.
+// It provides the same interface as the standard library's RoundTripper for HTTP transport.
+type RoundTripper http.RoundTripper

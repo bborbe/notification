@@ -1,0 +1,15 @@
+/vendor
+/CLAUDE.md
+/.claude
+/coverage.out
+/.cursorignore
+/.mcp-auth
+/.mcp.json
+/.serena
+/data
+/.update-logs/
+/.mcp-*
+/.dark-factory.lock
+/.dark-factory.log
+/prompts/log
+/specs/log

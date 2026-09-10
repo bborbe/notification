@@ -1,0 +1,12 @@
+/vendor
+/CLAUDE.md
+/.claude
+coverage.out
+coverage.html
+coverprofile.out
+/.update-logs/
+/.mcp-*
+/.dark-factory.lock
+/.dark-factory.log
+/prompts/log
+/specs/log

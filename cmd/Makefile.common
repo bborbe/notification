@@ -1,0 +1,13 @@
+# Self-contained shared vars for the notification repo services.
+# Overridable via environment or `make VAR=value`.
+KAFKA_BROKERS ?= localhost:9092
+DATADIR ?= data
+BRANCH ?= local
+DOCKER_REGISTRY ?= docker.io
+
+CORE_NOTIFICATION_CONTROLLER_PORT ?= 8080
+CORE_DISCORD_CONTROLLER_PORT ?= 8081
+FRONTEND_NOTIFICATION_PORT ?= 8082
+SENTRY_DSN_KEY ?=
+CORE_DISCORD_SERVER_ID ?=
+CORE_DISCORD_KEY ?=
