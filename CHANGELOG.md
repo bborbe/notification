@@ -8,9 +8,12 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
-## v0.1.1
+## Unreleased
 
 - refactor: scope repo to library only — services moved to dedicated repos (notification-controller, notification-discord), each with own go.mod and Dockerfile
+
+## v0.1.1
+
 - refactor: drop frontend read-model from delivery core (read-model stays in trading as the trading UI query service)
 
 ## v0.1.0
