@@ -8,8 +8,11 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## Unreleased
+
+- refactor: drop frontend read-model from delivery core (read-model stays in trading as the trading UI query service)
+
 ## v0.1.0
 
 - feat: extract generic notification core from trading monorepo (model, CDB publish command + sender, controller, NotificationHandlerTx) into this repo
 - feat: opaque metadata on the notification model (source-specific fields pass through as key/value pairs)
-- refactor: drop frontend read-model from delivery core (read-model stays in trading as the trading UI query service)
