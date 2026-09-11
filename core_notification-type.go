@@ -19,6 +19,7 @@ const (
 	BacktestCompletedNotificationType     NotificationType = "backtest-completed"
 	BacktestFailedNotificationType        NotificationType = "backtest-failed"
 	BacktestStartedNotificationType       NotificationType = "backtest-started"
+	GchatRelevantNotificationType         NotificationType = "gchat-relevant"
 	GoReleaseNotificationType             NotificationType = "go-release"
 	MantraNotificationType                NotificationType = "mantra"
 	PendingApprovalNotificationType       NotificationType = "pending-approval"
@@ -32,6 +33,7 @@ var AvailableNotificationTypes = NotificationTypes{
 	BacktestCompletedNotificationType,
 	BacktestFailedNotificationType,
 	BacktestStartedNotificationType,
+	GchatRelevantNotificationType,
 	GoReleaseNotificationType,
 	MantraNotificationType,
 	PendingApprovalNotificationType,
