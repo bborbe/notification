@@ -16,6 +16,7 @@ import (
 const (
 	AccountHitLossLimitNotificationType   NotificationType = "account-loss-limit"
 	AccountHitProfitLimitNotificationType NotificationType = "account-profit-limit"
+	AgentEscalationNotificationType       NotificationType = "agent-escalation"
 	BacktestCompletedNotificationType     NotificationType = "backtest-completed"
 	BacktestFailedNotificationType        NotificationType = "backtest-failed"
 	BacktestStartedNotificationType       NotificationType = "backtest-started"
@@ -30,6 +31,7 @@ const (
 var AvailableNotificationTypes = NotificationTypes{
 	AccountHitLossLimitNotificationType,
 	AccountHitProfitLimitNotificationType,
+	AgentEscalationNotificationType,
 	BacktestCompletedNotificationType,
 	BacktestFailedNotificationType,
 	BacktestStartedNotificationType,
