@@ -8,13 +8,14 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## Unreleased
+
+- feat: register agent-escalation notification type for the agent escalation producer
+- feat: register gchat-relevant notification type for the gchat-watcher producer
+
 ## v0.3.0
 
 - feat: register mantra notification type for the mantra-watcher producer
-
-## Unreleased
-
-- feat: register gchat-relevant notification type for the gchat-watcher producer
 
 ## v0.2.0
 
