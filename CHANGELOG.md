@@ -12,6 +12,10 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 
 - feat: register mantra notification type for the mantra-watcher producer
 
+## Unreleased
+
+- feat: register gchat-relevant notification type for the gchat-watcher producer
+
 ## v0.2.0
 
 - feat: register go-release notification type for the go-version-watcher producer
