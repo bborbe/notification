@@ -20,6 +20,7 @@ const (
 	BacktestFailedNotificationType        NotificationType = "backtest-failed"
 	BacktestStartedNotificationType       NotificationType = "backtest-started"
 	GoReleaseNotificationType             NotificationType = "go-release"
+	MantraNotificationType                NotificationType = "mantra"
 	PendingApprovalNotificationType       NotificationType = "pending-approval"
 	SignalNotificationType                NotificationType = "signal"
 	TestNotificationType                  NotificationType = "test"
@@ -32,6 +33,7 @@ var AvailableNotificationTypes = NotificationTypes{
 	BacktestFailedNotificationType,
 	BacktestStartedNotificationType,
 	GoReleaseNotificationType,
+	MantraNotificationType,
 	PendingApprovalNotificationType,
 	SignalNotificationType,
 	TestNotificationType,
