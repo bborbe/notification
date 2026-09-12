@@ -43,7 +43,7 @@ func (c *sendCommandObjectSender) SendCommand(
 	ctx context.Context,
 	sendCommand SendCommand,
 ) error {
-	glog.V(4).Infof("send telegram command started")
+	glog.V(4).Infof("send telegram command to cdb started")
 
 	if err := sendCommand.Validate(ctx); err != nil {
 		return errors.Wrap(ctx, err, "validate send command failed")
@@ -68,6 +68,6 @@ func (c *sendCommandObjectSender) SendCommand(
 		return errors.Wrapf(ctx, err, "send command failed")
 	}
 
-	glog.V(4).Infof("send telegram command completed")
+	glog.V(4).Infof("send telegram command to cdb completed")
 	return nil
 }
