@@ -7,7 +7,6 @@ package telegram
 import (
 	"context"
 
-	"github.com/bborbe/errors"
 	"github.com/bborbe/validation"
 )
 
@@ -22,8 +21,7 @@ func (m Message) Ptr() *Message {
 }
 
 func (m Message) Validate(ctx context.Context) error {
-	if len(m) == 0 {
-		return errors.Wrapf(ctx, validation.Error, "Message empty")
-	}
-	return nil
+	return validation.All{
+		validation.Name("Message", validation.NotEmptyString(m)),
+	}.Validate(ctx)
 }

@@ -7,7 +7,6 @@ package telegram
 import (
 	"context"
 
-	"github.com/bborbe/errors"
 	"github.com/bborbe/validation"
 )
 
@@ -17,10 +16,9 @@ import (
 type ChatID string
 
 func (c ChatID) Validate(ctx context.Context) error {
-	if len(c) == 0 {
-		return errors.Wrapf(ctx, validation.Error, "chat id empty")
-	}
-	return nil
+	return validation.All{
+		validation.Name("ChatID", validation.NotEmptyString(c)),
+	}.Validate(ctx)
 }
 
 func (c ChatID) String() string {
