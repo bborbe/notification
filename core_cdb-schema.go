@@ -17,3 +17,9 @@ var NotificationV1SchemaID = cdb.SchemaID{
 	Kind:    "notification",
 	Version: "v1",
 }
+
+var TelegramV1SchemaID = cdb.SchemaID{
+	Group:   "core",
+	Kind:    "telegram",
+	Version: "v1",
+}
