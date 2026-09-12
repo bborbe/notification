@@ -98,6 +98,10 @@ var (
 	CoreDiscordSendPermission  cqrsiam.Permission = "discord.send"
 	CoreDiscordAdminPermission cqrsiam.Permission = "discord.admin"
 
+	// Telegram cqrsiam.Permissions
+	CoreTelegramSendPermission  cqrsiam.Permission = "telegram.send"
+	CoreTelegramAdminPermission cqrsiam.Permission = "telegram.admin"
+
 	// News cqrsiam.Permissions
 	CoreNewsUpdatePermission cqrsiam.Permission = "news.update"
 	CoreNewsRatePermission   cqrsiam.Permission = "news.rate"
@@ -171,6 +175,8 @@ var AvailablePermissions = cqrsiam.Permissions{
 	CoreClosingDeletePermission,
 	CoreDiscordSendPermission,
 	CoreDiscordAdminPermission,
+	CoreTelegramSendPermission,
+	CoreTelegramAdminPermission,
 	CoreNewsUpdatePermission,
 	CoreNewsRatePermission,
 	CoreNewsAdminPermission,
