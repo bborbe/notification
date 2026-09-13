@@ -98,6 +98,8 @@ var AvailableRoleBindings = cqrsiam.RoleBindings{
 	),
 	cqrsiam.NewRoleBinding(DiscordAdmin, UserBenPrivate),
 	cqrsiam.NewRoleBinding(DiscordUser, ApiInitiator, CoreNotificationController),
+	cqrsiam.NewRoleBinding(TelegramAdmin, UserBenPrivate),
+	cqrsiam.NewRoleBinding(TelegramUser, ApiInitiator, CoreNotificationController),
 	cqrsiam.NewRoleBinding(NewsAdmin, UserBenPrivate),
 	cqrsiam.NewRoleBinding(
 		NewsUser,

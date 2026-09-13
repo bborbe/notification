@@ -227,6 +227,20 @@ var (
 		CoreDiscordSendPermission,
 	)
 
+	// TelegramAdmin provides full administrative access to telegram operations.
+	// Intended for: Core administrators and the telegram controller service.
+	// cqrsiam.Permissions: All telegram operations including admin-level functions.
+	TelegramAdmin = cqrsiam.NewRole("TelegramAdmin",
+		CoreTelegramAdminPermission,
+		CoreTelegramSendPermission,
+	)
+	// TelegramUser provides standard telegram operations for regular users and services.
+	// Intended for: API users and services that send telegram messages.
+	// cqrsiam.Permissions: Send telegram messages (excludes admin functions).
+	TelegramUser = cqrsiam.NewRole("TelegramUser",
+		CoreTelegramSendPermission,
+	)
+
 	// NewsAdmin provides full administrative access to news operations.
 	// Intended for: Core administrators and the news controller service.
 	// cqrsiam.Permissions: All news operations including admin functions.
@@ -350,6 +364,8 @@ var AvailableRoles = cqrsiam.Roles{
 	ClosingUser,
 	DiscordAdmin,
 	DiscordUser,
+	TelegramAdmin,
+	TelegramUser,
 	NewsAdmin,
 	NewsUser,
 	NewsViewer,
