@@ -8,7 +8,7 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
-## Unreleased
+## v0.6.1
 
 - fix: bind the notification controller's initiator to a telegram role. The telegram permissions landed in v0.6.0 but nothing granted them to anyone: `core-notification-controller` was bound only to `DiscordUser`, so the deployed telegram service rejected every send command with `permissions([discord.send]) does not contains any of permissions([telegram.send telegram.admin])` — the handler routed the notification correctly and the delivery never happened. `TelegramUser` (send only) mirrors `DiscordUser`, `TelegramAdmin` mirrors `DiscordAdmin`, and the controller's initiator joins `ApiInitiator` on the user role exactly as it does for discord.
 
