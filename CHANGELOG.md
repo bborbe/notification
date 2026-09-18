@@ -8,7 +8,7 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
-## Unreleased
+## v0.7.0
 
 - feat: add `telegram.Bot` and a `Bot` field on `command/telegram.SendCommand`, naming which bot delivers a message. Optional and omitempty: an absent field unmarshals to the empty default bot, so commands produced before this change keep reaching the bot that has always handled them. A chat id cannot identify a bot — for a private chat it is the recipient's own user id — so consumers filter on `Bot` to let several bots serve one chat.
 
