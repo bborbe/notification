@@ -8,6 +8,10 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## Unreleased
+
+- feat: add `telegram.Bot` and a `Bot` field on `command/telegram.SendCommand`, naming which bot delivers a message. Optional and omitempty: an absent field unmarshals to the empty default bot, so commands produced before this change keep reaching the bot that has always handled them. A chat id cannot identify a bot — for a private chat it is the recipient's own user id — so consumers filter on `Bot` to let several bots serve one chat.
+
 ## v0.6.1
 
 - fix: bind the notification controller's initiator to a telegram role. The telegram permissions landed in v0.6.0 but nothing granted them to anyone: `core-notification-controller` was bound only to `DiscordUser`, so the deployed telegram service rejected every send command with `permissions([discord.send]) does not contains any of permissions([telegram.send telegram.admin])` — the handler routed the notification correctly and the delivery never happened. `TelegramUser` (send only) mirrors `DiscordUser`, `TelegramAdmin` mirrors `DiscordAdmin`, and the controller's initiator joins `ApiInitiator` on the user role exactly as it does for discord.
