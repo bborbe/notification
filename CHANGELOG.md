@@ -8,6 +8,10 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## Unreleased
+
+- chore: update github.com/bborbe/badgerkv to v1.11.21, github.com/bborbe/boltkv to v1.16.2, github.com/bborbe/collection to v1.21.2, github.com/bborbe/cqrs to v0.6.12, github.com/bborbe/http to v1.26.30, github.com/bborbe/kafka to v1.28.3, github.com/bborbe/kv to v1.21.18, github.com/bborbe/log to v1.7.4, github.com/bborbe/memorykv to v1.6.19, github.com/bborbe/parse to v1.12.3, github.com/bborbe/time to v1.27.17, github.com/bborbe/validation to v1.5.5
+
 ## v0.7.2
 
 - chore: update Go to 1.27.2 and github.com/bborbe/badgerkv to v1.11.18, github.com/bborbe/boltkv to v1.16.1, github.com/bborbe/errors to v1.6.3, github.com/bborbe/http to v1.26.28, github.com/bborbe/kafka to v1.27.0, github.com/bborbe/kv to v1.21.17, github.com/bborbe/log to v1.7.3, github.com/bborbe/memorykv to v1.6.15, github.com/bborbe/parse to v1.12.2, github.com/bborbe/run to v1.11.2, github.com/bborbe/time to v1.27.16, github.com/onsi/ginkgo/v2 to v2.33.1, github.com/prometheus/client_golang to v1.25.0
