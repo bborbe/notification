@@ -8,7 +8,7 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
-## Unreleased
+## v0.7.6
 
 - chore: update github.com/bborbe/boltkv to v1.16.4, github.com/bborbe/collection to v1.21.4, github.com/bborbe/cqrs to v0.6.14, github.com/bborbe/errors to v1.6.5, github.com/bborbe/kafka to v1.29.1, github.com/bborbe/run to v1.11.5
 
