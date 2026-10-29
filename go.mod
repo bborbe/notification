@@ -4,19 +4,19 @@ go 1.27.3
 
 require (
 	github.com/IBM/sarama v1.61.1
-	github.com/bborbe/badgerkv v1.11.23
+	github.com/bborbe/badgerkv v1.11.24
 	github.com/bborbe/boltkv v1.16.5
 	github.com/bborbe/collection v1.21.4
 	github.com/bborbe/cqrs v0.6.15
 	github.com/bborbe/errors v1.6.5
 	github.com/bborbe/http v1.26.32
-	github.com/bborbe/kafka v1.29.2
-	github.com/bborbe/kv v1.21.20
+	github.com/bborbe/kafka v1.29.3
+	github.com/bborbe/kv v1.21.21
 	github.com/bborbe/log v1.7.5
-	github.com/bborbe/memorykv v1.6.21
+	github.com/bborbe/memorykv v1.6.22
 	github.com/bborbe/parse v1.12.4
-	github.com/bborbe/run v1.11.5
-	github.com/bborbe/time v1.27.19
+	github.com/bborbe/run v1.11.6
+	github.com/bborbe/time v1.27.20
 	github.com/bborbe/validation v1.5.6
 	github.com/bwmarrin/discordgo v0.29.0
 	github.com/golang/glog v1.2.5
@@ -28,7 +28,7 @@ require (
 
 require (
 	github.com/Masterminds/semver/v3 v3.5.0 // indirect
-	github.com/bborbe/k8s v1.14.24 // indirect
+	github.com/bborbe/k8s v1.14.25 // indirect
 	github.com/bborbe/math v1.4.16 // indirect
 	github.com/bborbe/sentry v1.10.6 // indirect
 	github.com/bborbe/strimzi v1.8.23 // indirect
@@ -65,7 +65,7 @@ require (
 	github.com/jcmturner/rpc/v2 v2.0.3 // indirect
 	github.com/klauspost/compress v1.20.3 // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
-	github.com/pandatix/go-abnf v0.5.1 // indirect
+	github.com/pandatix/go-abnf v0.5.3 // indirect
 	github.com/pierrec/lz4/v4 v4.1.33 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 // indirect

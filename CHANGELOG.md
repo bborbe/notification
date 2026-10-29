@@ -8,6 +8,10 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## Unreleased
+
+- chore: update github.com/bborbe/badgerkv to v1.11.24, github.com/bborbe/kafka to v1.29.3, github.com/bborbe/kv to v1.21.21, github.com/bborbe/memorykv to v1.6.22, github.com/bborbe/run to v1.11.6, github.com/bborbe/time to v1.27.20
+
 ## v0.7.7
 
 - chore: update github.com/bborbe/badgerkv to v1.11.23, github.com/bborbe/boltkv to v1.16.5, github.com/bborbe/cqrs to v0.6.15, github.com/bborbe/http to v1.26.32, github.com/bborbe/kafka to v1.29.2, github.com/bborbe/kv to v1.21.20, github.com/bborbe/memorykv to v1.6.21, github.com/bborbe/time to v1.27.19
