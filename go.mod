@@ -4,19 +4,19 @@ go 1.27.3
 
 require (
 	github.com/IBM/sarama v1.61.1
-	github.com/bborbe/badgerkv v1.11.24
+	github.com/bborbe/badgerkv v1.11.26
 	github.com/bborbe/boltkv v1.16.5
 	github.com/bborbe/collection v1.21.4
 	github.com/bborbe/cqrs v0.6.15
 	github.com/bborbe/errors v1.6.5
 	github.com/bborbe/http v1.26.32
-	github.com/bborbe/kafka v1.29.3
-	github.com/bborbe/kv v1.21.21
+	github.com/bborbe/kafka v1.29.5
+	github.com/bborbe/kv v1.21.24
 	github.com/bborbe/log v1.7.5
-	github.com/bborbe/memorykv v1.6.22
+	github.com/bborbe/memorykv v1.6.24
 	github.com/bborbe/parse v1.12.4
-	github.com/bborbe/run v1.11.6
-	github.com/bborbe/time v1.27.20
+	github.com/bborbe/run v1.11.7
+	github.com/bborbe/time v1.27.21
 	github.com/bborbe/validation v1.5.6
 	github.com/bwmarrin/discordgo v0.29.0
 	github.com/golang/glog v1.2.5
@@ -28,7 +28,7 @@ require (
 
 require (
 	github.com/Masterminds/semver/v3 v3.5.0 // indirect
-	github.com/bborbe/k8s v1.14.25 // indirect
+	github.com/bborbe/k8s v1.14.27 // indirect
 	github.com/bborbe/math v1.4.16 // indirect
 	github.com/bborbe/sentry v1.10.6 // indirect
 	github.com/bborbe/strimzi v1.8.23 // indirect
