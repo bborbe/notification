@@ -8,7 +8,7 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
-## Unreleased
+## v0.7.10
 
 - chore: update github.com/bborbe/badgerkv to v1.11.27, github.com/bborbe/kafka to v1.29.6, github.com/bborbe/run to v1.11.8
 
