@@ -8,6 +8,10 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## Unreleased
+
+- chore: update github.com/IBM/sarama to v1.62.0, github.com/bborbe/badgerkv to v1.11.35, github.com/bborbe/boltkv to v1.17.1, github.com/bborbe/collection to v1.21.9, github.com/bborbe/cqrs to v0.6.18, github.com/bborbe/errors to v1.7.1, github.com/bborbe/http to v1.28.1, github.com/bborbe/kafka to v1.30.4, github.com/bborbe/kv to v1.21.31, github.com/bborbe/log to v1.7.10, github.com/bborbe/memorykv to v1.7.2, github.com/bborbe/parse to v1.12.8, github.com/bborbe/run to v1.13.0, github.com/bborbe/time to v1.27.30, github.com/bborbe/validation to v1.5.12
+
 ## v0.7.13
 
 - chore: update Go to 1.27.4 and github.com/bborbe/badgerkv to v1.11.34, github.com/bborbe/collection to v1.21.7, github.com/bborbe/cqrs to v0.6.16, github.com/bborbe/http to v1.26.34, github.com/bborbe/kafka to v1.29.14, github.com/bborbe/log to v1.7.9, github.com/bborbe/parse to v1.12.7, github.com/bborbe/time to v1.27.28
